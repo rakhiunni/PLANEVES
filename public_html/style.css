@@ -1,0 +1,1022 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 4 Jul, 2018, 9:50:28 PM
+    Author     : Cotolor Enterprise
+*/
+/*signup page*/
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+header
+{
+    background-color: #ebebeb;
+    width: 100%;
+    float: left;
+    height: 92px;
+   
+}
+.logo
+{
+    padding-left: 15px;
+   
+}
+#logo-menu
+{
+  padding-top: 40px;   
+}
+#planeves
+{
+    padding-top: 53px;
+}
+.logo img
+{
+    float: left;
+}
+.logo h2
+{
+    font-size: 60px;
+    font-family: GloucesterMT;
+    color: #353434;
+    float: left;
+    padding-left: 10px;
+}
+
+.login
+{
+    padding-top: 35px;
+    padding-bottom: 50px;
+    float: left;
+    width:90%;
+    
+}
+.login h2{
+    text-align: center;
+    margin: 0px;
+    font-size: 11px;
+    font-family: 'Roboto', sans-serif;
+    color: #353434;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+.login a
+{
+    font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #353434;
+    padding-left: 6px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #f64f59 0% , #ef239b 100% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.appstore-content
+{
+    width: 90%;
+/*    float: left;*/
+}
+.appstore-content ul
+{
+    list-style-type: none;
+    margin: 0px auto;
+        padding-left: 0px;
+
+}
+.appstore-content ul li{
+    float: left;
+/*    padding-left: 13px;*/
+/*    width: 33.33%;*/
+padding-left: 7px;
+padding-right: 7px;
+}
+.menu-footer
+{
+    width:90%;
+    float: left;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    
+}
+.menu-footer ul
+{
+    list-style-type: none;
+font-size: 2px;
+/*   // margin-left: 10px;*/
+    padding-left: 0px;
+}
+.menu-footer ul li
+{
+    float: left;
+    list-style-type: none;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.menu-footer ul li a
+{
+ font-family: 'Roboto', sans-serif;
+ font-size: 11px;
+ color: #353434;
+ text-decoration: none;
+ text-transform: uppercase;
+ padding-left: 5px;
+ padding-right: 5px;
+ float: left;
+}
+.menu-footer span
+{
+    height: 2px;
+    width: 2px;
+    background: #000;
+    float: left;
+    display: block;
+    margin-top: 10px;
+}
+footer
+{
+    width: 100%;
+    float: left;
+  
+}
+.footer
+{
+    width: 100%;
+    float: left; 
+     padding-bottom: 13px;
+    padding-top: 13px;
+}
+.social-media
+{
+   
+    float: left;
+}
+.social-media a
+{
+   float: left; 
+   padding-right: 5px;
+}
+.social-media .fa
+{
+    color: #fff;
+}
+.footer-content
+{
+    float: left;
+}
+.footer-content p
+{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 9px;
+    color: #fff;
+    width: 100%;
+}
+.footer-logo
+{
+    float: right;
+}
+.center-block{
+  margin: 0px auto;
+  display: block;
+}
+/*footer ends*/
+.form-signup
+{
+
+width: 100%;
+float: left;
+}
+.signup-form
+{
+ width: 100%;
+float: left;   
+}
+
+.innersection
+{
+    width: 550px;
+    margin: 0px auto;
+    padding-top: 150px;    
+
+}
+.form
+{
+    width: 100%;
+    float: left;
+}
+.form-valid
+{
+ width: 100%;
+float: left;   
+}
+.form-valid-icon
+{
+    
+}
+#divFirstName
+{
+  float: left;
+    width: 4%;
+    text-align: center;
+    color: #d3d3d3;
+    padding-top: 12px;
+    padding-left: 5px;
+    font-size: medium;
+}
+#divuserName
+{
+ float: left;
+    width: 4%;
+    text-align: center;   
+    color: #d3d3d3;
+        padding-top: 12px;
+padding-left: 5px;
+ font-size: medium;
+}
+.divpswd
+{
+   float: left;
+    width: 4%;
+    text-align: center;   
+    color: #d3d3d3; 
+        padding-top: 12px;
+padding-left: 5px;
+ font-size: medium;
+}
+.confirmpaswd
+{
+ float: left;
+    width: 4%;
+    text-align: center;   
+    color: #d3d3d3;   
+        padding-top: 12px;
+padding-left: 5px;
+ font-size: medium;
+}
+.emaildiv
+{
+   float: left;
+    width: 4%;
+    text-align: center;   
+    color: #d3d3d3;  
+        padding-top: 12px;
+        padding-left: 5px;
+         font-size: medium;
+
+}
+.form-valid-icon .fa-check
+{
+    color: #eeeeee;
+}
+/*.svg-inline--fa {
+    font-size: inherit;
+     color: #eeeeee;
+}*/
+.form-content
+{
+width: 96%;
+float: left;
+border: 1px solid #ccc;
+border-radius: 11px;
+height: 40px;
+margin-bottom: 20px;
+}
+.form-content img
+{
+    padding-left: 20px;
+    padding-top: 10px;
+    float: left;
+}
+.form-field
+{
+    width: 85%;
+    border:none;
+    padding-top: 12px;
+    float: left;
+    padding-left: 15px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    box-shadow: 0px 0px 0px 0px #fff;
+}
+.form-submit
+{
+    width: 96%;
+    float: left;
+   background: linear-gradient(to right,#f64f59, #ef239b);
+
+color: #fff;
+    height: 44px;
+    background-repeat: no-repeat;
+    border: none;
+    color: #fff;
+    background-position: center;
+    border-radius: 10px;
+    font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+#divCheckPasswordMatch {
+    color: red;
+    padding-bottom: 20px;
+}
+#vendornamevalidation {
+    color: red;
+    padding-bottom: 20px;
+}
+#vendornamevalidation {
+    color: red;
+    padding-bottom: 20px;
+}
+.valid {
+    float: right;
+    position: relative;
+    top: 1.4rem;
+    left: -10%;
+    width: 1rem;
+    height: 1rem;
+    background: transparent;
+    content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/939465/tick.jpg);
+  }
+
+.form-signup
+{
+
+width: 100%;
+float: left;
+}
+.login-form
+{
+ width: 100%;
+float: left;   
+}
+
+.form
+{
+    width: 100%;
+    float: left;
+}
+.form-content-login
+{
+width: 100%;
+float: left;
+border: 1px solid #ccc;
+border-radius: 11px;
+height: 40px;
+margin-bottom: 15px;
+}
+.form-content-login img
+{
+    padding-left: 20px;
+    padding-top: 10px;
+    float: left;
+}
+.form-field
+{
+    width: 85%;
+    border:none;
+    padding-top: 10px;
+    float: left;
+    padding-left: 15px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    outline: none;
+}
+.form-submit-login
+{
+    width: 100%;
+    float: left;
+    background: linear-gradient(to right,#f64f59, #ef239b);
+
+color: #fff;
+    height: 44px;
+    background-repeat: no-repeat;
+    border: none;
+    color: #fff;
+    background-position: center;
+    border-radius: 10px;
+    font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.remember-pswd
+{
+    text-align: center;
+    width: 100%;
+    float: left;
+    padding-bottom: 15px;
+}
+.remember-pswd label{
+   
+    color: #353434;
+    font-size: 16px;
+     font-family: 'Roboto', sans-serif;
+     font-weight: 300;
+     padding-left: 5px;
+     
+}
+.form-valid
+{
+    width: 100%;
+    float: left;
+}
+.login-footer 
+{
+    width: 100%;
+}
+.login-up
+{
+    width: 100%;
+}
+.appstore-content-login ul li:last-child img
+
+{
+   padding-bottom: 1px; 
+}
+.menu-footer-login
+{
+    width: 309px;
+margin: 0px auto;
+}
+.appstore-content-login
+{
+    width: 260px;
+    margin: 0px auto;
+}
+.login-footer
+{
+    padding-bottom: 160px;
+}
+ input[type="checkbox"] {
+    background: linear-gradient(to right, #f64f59 0% , #ef239b 100% );
+    background-clip: border-box;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+   }
+   .innersection h3
+   {
+    text-transform: uppercase;
+background: linear-gradient(to right, #f64f59 0% , #ef239b 100% );
+    background-clip: border-box;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;  
+font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
+    font-size: 33px;
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 40px;
+    width: 90%;
+   }
+   .forget
+   {
+       width: 100%;
+       float: left;
+       text-align: center;
+      
+       padding-bottom: 30px;
+   }
+   .forget a
+   {
+    
+background: linear-gradient(to right, #f64f59 0% , #ef239b 100% );
+    background-clip: border-box;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;  
+ font-family: 'Roboto', sans-serif;
+ font-size: 16px;
+    text-align: center;  
+    font-weight: 300;
+    text-decoration: none
+   }
+   .innersection-forgtpswd
+   {
+    width: 550px;
+    margin: 0px auto;
+    padding-top: 250px;
+   }
+  .innersection-newpswd
+  {
+      padding-top: 200px;
+  }
+   
+   
+/*  welcome page*/
+    
+.welcome-background
+{
+    width: 100%;
+    float: left;
+    background-image: url('images/welcome-background.png');
+     padding-top: 100px;
+  background-repeat: no-repeat;   
+}
+
+.thanku-content
+{
+    width: 100%;
+    float: left;
+    text-align: center;
+      padding-top: 35px;
+        padding-bottom: 250px;
+}
+.thanku-content h2
+{
+    font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
+    font-size: 39px;
+    color: #fff;  
+    margin: 0px;
+}
+.sucessful-content
+{
+   width: 100%;
+    float: left;
+    text-align: center; 
+    padding-bottom: 55px;
+}
+.sucessful-content h2
+{
+    font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
+    font-size: 31px;
+     font-size: 43px;  
+      padding-bottom: 30px;
+/*    color: #fff;  */
+    padding-bottom: 20px;
+background: linear-gradient(to right, #f64f59 0% , #ef239b 100% );
+    background-clip: border-box;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.sucessful-content a
+{
+    font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #fff; 
+    padding: 10px 25px;
+  background: linear-gradient(to right, #f64f59 0% , #ef239b 100% );
+  border-radius: 10px;
+  box-shadow: 2px 3px 2px 1px #fbb3cc;
+  text-decoration: none;
+}
+.welcomepage-footer
+{
+/* position: absolute;*/
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #353434;
+  text-align: center;  
+} 
+.form-newpswd
+{
+    padding-bottom: 75px;
+}
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left:0; top: 2px;
+  width: 17px; height: 17px;
+  border: 1px solid #aaa;
+  background: #f8f8f8;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.3)
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '✔';
+  position: absolute;
+/*  top: 0; 
+  left: 4px;*/
+top: -6px;
+left: 3px;
+  font-size: 21px;
+  color: #ef239b;
+  transition: all .2s;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+[type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+[type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+  border: 1px dotted blue;
+}
+
+/* hover style just for information */
+label:hover:before {
+  border: 1px solid #4778d9!important;
+}
+  .border-footer
+  {
+      width: 100%;
+      float: left;
+      height: 5px;
+      background:linear-gradient(to right, #f64f59 0% , #ef239b 100% );
+  }
+  
+  
+/*  vendor profile page*/
+  
+
+
+/*mediaquery*/
+.sidebar-left
+{
+    
+}
+.clearfix
+{
+    clear: both;
+}
+@media(max-width:1664px)
+  {
+      .thanku-content
+      {
+        padding-bottom: 200px;  
+      }
+      .menu-footer{
+          
+      }
+  }
+@media(max-width:1480px)
+  {
+      .thanku-content
+      {
+        padding-bottom: 170px;  
+      }
+      .menu-footer{
+          
+      }
+  }
+  
+ @media(max-width:1366px)
+  {
+    .welcome-background
+    {
+        padding-top: 70px;
+    }
+    .thanku-content{
+        padding-bottom: 115px;
+    padding-top: 30px;
+    }
+    .thanku-content h2{
+        font-size: 27px;
+    }
+    .sucessful-content h2{
+     font-size: 31px;
+     padding-bottom: 20px;
+    }
+      .welcome-background
+{
+       background-image: url('images/welcome-full.png');
+  }
+  
+  .innersection-signup
+  {
+      padding-top: 50px;
+  }
+  .innersection-forgtpswd
+  {
+     padding-top: 185px; 
+  }
+  .innersection-newpswd
+  {
+      padding-top: 135px;
+  }
+  .login-footer {
+    padding-bottom: 110px;
+}
+.login-newpswd
+{
+    padding-bottom: 115px;
+}
+  }
+  @media(max-width:1270px)
+  {
+  .sucessful-content
+  {
+    padding-bottom: 0px;  
+  }  
+  }
+  @media(max-width:1245px)
+  {
+  .welcome-background
+  {
+    padding-top: 40px;  
+  }  
+  }
+  @media(max-width:1208px)
+  {
+      .thanku-content{
+          padding-bottom: 135px;
+      }
+  }
+   @media(max-width:1200px)
+{
+    .innersection-login{
+      padding-top: 150px;
+    } 
+} 
+ 
+@media(max-width:991px)
+{
+    .footer-logo img{
+        padding-left: 5px;
+    }
+    .social-media a{
+        line-height: 1.0;
+    }
+    .innersection h3{
+    font-size: 24px;
+}
+.innersection
+{
+ padding-top: 100px;   
+}
+.login-up {
+    width: 96%;
+}
+.innersection-forgtpswd
+{
+    padding-top: 160px;
+}
+}
+@media(max-width:767px)
+{
+    .navbar-toggle
+    {
+        display: block;
+    }
+    .logo{
+padding-left: 15px;
+width: 100%;
+float: left;
+text-align: center;
+   }
+.logo-icon {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+#planeves
+{
+    text-align: center;
+}
+.logo img {
+
+    float: none;
+}
+#planeves {
+
+    padding-top:0px;
+}
+ .welcome-background
+{
+     background-image: url('images/welcome-ipad.png'); 
+       width: 100%;
+    padding-top: 157px;
+  } 
+    .social-media{
+        padding-bottom: 10px;
+    }
+    .appstore-content,.appstore-content-login
+    {
+        display: none;
+    }
+    .innersection h3
+    {
+        font-size: 24px;
+        width: 100%;
+    }
+    .innersection
+    {
+        width:100%;
+    }
+    .form-valid {
+    width: 62%;
+    margin: 0px auto;
+    float: none;
+}
+.form-valid-login
+{
+ width: 100%;
+float: left;   
+}
+ .form-submit {
+    width: 96%;
+    margin: 0px auto;
+    float: none; 
+}
+ .menu-footer {
+    width: 100%;   
+}
+.login-footer {
+    padding-bottom: 30px;
+}
+
+  .form-buttn {
+    width: 62%;
+    margin: 0px auto;
+   }
+   .login {
+    width: 96%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.forget{
+    padding-bottom: 0px;
+}
+.login-forgetpswd
+{
+    padding-bottom: 85px;
+}
+.welcomepage-footer
+{
+/*    display: none;*/
+}
+.form-field{
+    font-size: 12px;
+}
+.form-submit-login
+{
+    width: 100%;
+    float: left;
+}
+.menu-footer{
+   
+    padding-top: 0px;
+}
+.innersection-newpswd
+{
+    padding-top: 115px;
+}
+#footer-logo
+{
+    display: none;
+}
+.social-media
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+}
+@media(max-width:600px)
+{
+     .welcome-background
+{
+     padding-top: 100px;
+}
+.thanku-content h2 {
+    font-size: 21px;
+}
+.sucessful-content h2 {
+    font-size: 20px;
+}
+}
+@media(max-width:550px)
+{
+     .innersection-forgtpswd
+   {
+    width: 100%;
+    margin: 0px auto;
+   }
+   .form-valid {
+    width: 75%;
+   }
+   .form-buttn {
+    width: 75%;
+   }
+}
+@media(max-width:410px)
+{
+ .form-valid {
+    width: 90%;
+}   
+.form-buttn {
+    width: 90%;
+}
+}
+@media(max-width:383px)
+{
+    .innersection{
+        width: 100%;
+        margin: 0px auto;
+    } 
+}
+@media(max-width:370px)
+{
+    .menu-footer ul li{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .appstore-content ul{
+        padding-left: 30px;
+    } 
+    .menu-footer ul{
+        padding-left: 37px;
+    }
+}
+@media(max-width:345px)
+{
+    .appstore-content ul{
+        padding-left: 21px;
+    } 
+    .menu-footer ul{
+        padding-left: 26px;
+    }
+    .menu-sucesspage
+    {
+        width: 300px;
+    }
+}
+@media(max-width:336px)
+{
+    .appstore-content ul{
+        padding-left: 17px;
+    } 
+    .menu-footer ul{
+        padding-left: 21px;
+    }
+    .menu-sucesspage
+    {
+        width: 285px;
+    }
+}
+@media(max-width:328px)
+{
+    .appstore-content ul{
+        padding-left: 14px;
+    } 
+    .menu-footer ul{
+        padding-left: 16px;
+    }
+}
+
+@media(max-width:323px)
+{
+    .form-content img{
+        padding-left: 20px;
+    }
+    .menu-footer-login {
+    width: 100%;
+    }
+    .menu-sucesspage
+    {
+        width: 270px;
+    }
+}
+

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jquery.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <div>
+            <form method="post" action="SignupProcess">
+                <div style="width:10%; ">
+                    <label>Company Name</label>
+                    <input type="text" name="comname" placeholder="Enter your company name" class="test">
+                    <label>Username Name</label>
+                    <input type="text" name="usrname" placeholder="Enter your user name" class="test">  
+                    <label>E-mail</label>
+                    <input type="email" name="email" placeholder="Enter your E-mail" class="test">  
+                    <label>Password</label>
+                    <input type="password" name="pwd" placeholder="Enter password" class="test" id="password">  
+                    <label>Confirm Password</label>
+                    <input type="password" name="cpwd" placeholder="Retype your password" class="test" id="confirm_password"> <span id='message'></span>    
+                    
+                    <input type="submit" name="submit" value="Submit" id="clic">  
+                </div>
+            </form>
+        </div>
+        
+       
+        <script>
+
+            $(function () {
+                $("#clic").click(function () {
+                    var current = 0;
+                    var count = 0;
+                    var percentage = 4.4;
+                    $(".test").each(function () {
+                        if ($(this).val() === "" | $(this).val() !== "")
+                        {
+                            count++;
+                        }
+//                            alert("count is"+count);
+                    });
+                    $(".test").each(function () {
+
+                        if ($(this).val() !== "")
+                        {
+
+                            current++;
+
+                        }
+                    });
+                    percentage = (current / count) * 100;
+//                    alert(percentage);
+                    var intvalue = Math.round(percentage);
+//                    alert(intvalue);
+                    // alert(count);
+//                                alert("current is:"+current);
+                    alert("Filled percentage is:" + intvalue + "%");
+                });
+
+
+                $('#password, #confirm_password').on('keyup', function () {
+                    if ($('#password').val() === $('#confirm_password').val()) {
+                         $('#message').html('Matching').css('color', 'green');
+//                        alert("Sucess");
+                    } else
+//                        alert("Not Sucess");
+                        $('#message').html('Not Matching').css('color', 'red');
+                });
+            });
+
+        </script>
+    </body>
+
+</html>
+
+
+<!--
+!---body starts here-- 
+<div class="container-fluid profile-page">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="row">
+                                <div class="menusection-dashboard">
+
+                                    <nav class="navbar navbar-inverse">
+
+                                        <div class="navbar-header">
+                                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>   
+                                                <a class="navbar-brand" href="#">Menu</a>
+                                            </button>
+
+                                        </div>
+                                        <div class="collapse navbar-collapse" id="myNavbar">
+                                            <ul class="nav navbar-nav">
+                                                <li class=""><img src="images/dashboard.png"><a href="#">Dashboard</a></li>
+                                                <li class="dropdown active"><img src="images/profile.png">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Profile</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="active"><a href="#">Overview</a></li>
+                                                        <li><a href="#">Contact</a></li>
+                                                        <li><a href="#">Photos</a></li>
+                                                        <li><a href="#">Social Media</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><img src="images/booking.png"><a href="#">Booking</a></li>
+                                                <li><img src="images/settings.png"><a href="#">Settings</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                    </nav>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="col-lg-9 profile-content">
+                            <div class="row">
+                                <div class="percentage-section">
+                                    <h2>Create Profile</h2>
+                                    <div id="myProgress">
+                                        <div id="myBar">10%</div>
+                                    </div>
+                                    <div class="overview-section">
+                                        <h3>Overview</h3>
+                                        <div class="container-profile">
+                                            
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>  
+                </div>  
+            </div>
+        </div>-->
+<!--/*.profile-page
+{
+    width: 100%;
+    float: left;
+}
+  .menusection-dashboard
+  {
+      background-color: #f9f9f9;
+      width: 100%;
+      float: left;
+  }
+  
+.collapse:not(.show) {
+  display: block;
+}
+.navbar-toggle
+{
+    display: none;
+}
+.menusection-dashboard ul{
+   // padding-left: 25px;
+}
+.menusection-dashboard ul li
+{
+    margin-top: 15px;
+    padding-left: 25px;
+}
+.menusection-dashboard ul li a
+{
+    text-decoration: none; 
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    padding-left: 10px;
+    color: #353434;
+}
+.menusection-dashboard .navbar
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.menusection-dashboard ul li.active ,
+.dropdown-menu li:hover a
+{
+  background: linear-gradient(to right, #f64f59 0% , #ef239b 100% );
+  color: #fff;
+}
+.menusection-dashboard ul li.active a 
+{
+    color: #fff;
+}
+.menusection-dashboard .dropdown-menu li.active
+{
+    background: #f9f9f9;
+}
+.dropdown-menu li .active  , .dropdown-menu li:hover a
+{
+      background: linear-gradient(to right, #f64f59 0% , #ef239b 100% );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+.dropdown-menu
+{
+    background-color: #f9f9f9; 
+    border-radius: 0px;
+    border: none;
+}
+.menusection-dashboard ul li img
+{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+}
+.dropdown-menu ul
+{
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 25px !important;
+}
+.dropdown-menu ul li a
+{
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+     color: #353434 !important;
+}
+.navbar-nav .dropdown-menu{
+    padding-left: 45px;
+}
+.dropdown-toggle::after
+{
+  border-right: none;
+
+border-bottom: none;
+
+border-left: none;  
+}
+percentage
+ #myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 10%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+.percentage-section h2{
+    font-size: 24px;
+     background: linear-gradient(to right, #f64f59 0% , #ef239b 100% );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+       font-family: 'Fredoka One', cursive;
+       text-align: center;
+       margin: 0px;
+       padding-bottom: 15px;
+}
+.percentage-section
+{
+    padding-top: 35px;
+    padding-bottom: 50px;
+    width: 100%;
+    float: left;
+}
+.overview-section
+{
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+.overview-section h3
+{
+     font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+}
+.container-profile
+{
+    width: 1095px;
+    margin: 0px auto;
+}*/-->

@@ -1,0 +1,272 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 4 Jul, 2018, 9:50:28 PM
+    Author     : Cotolor Enterprise
+*/
+/*signup page*/
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+header
+{
+    background-color: #ebebeb;
+    width: 100%;
+    float: left;
+    height: 92px;
+   
+}
+.logo
+{
+    padding-left: 15px;
+   
+}
+#logo-menu
+{
+  padding-top: 40px;   
+}
+#planeves
+{
+    padding-top: 53px;
+}
+.logo img
+{
+    float: left;
+}
+.logo h2
+{
+    font-size: 60px;
+    font-family: GloucesterMT;
+    color: #353434;
+    float: left;
+    padding-left: 10px;
+}
+
+.login
+{
+    padding-top: 22px;
+    padding-bottom: 22px;
+    float: left;
+    width: 100%;
+    
+}
+.login h2{
+    text-align: center;
+    margin: 0px;
+    font-size: 11px;
+    font-family: 'Roboto', sans-serif;
+    color: #353434;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+.login a
+{
+    font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #353434;
+    padding-left: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+	background: linear-gradient(to right, #f64f59
+		0% , #ef239b 100% );
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+}
+.appstore-content
+{
+    width: 100%;
+    float: left;
+}
+.appstore-content ul
+{
+    list-style-type: none;
+    margin: 0px auto;
+}
+.appstore-content ul li{
+    float: left;
+    padding-left: 13px;
+}
+.menu-footer
+{
+    width: 100%;
+    float: left;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    
+}
+.menu-footer ul{
+    font-size: 2px;
+    margin-left: 10px;
+}
+.menu-footer ul li
+{
+    float: left;
+    list-style-type: none;
+}
+.menu-footer ul li a
+{
+ font-family: 'Roboto', sans-serif;
+ font-size: 11px;
+ color: #353434;
+ text-decoration: none;
+ text-transform: uppercase;
+ padding-left: 5px;
+ padding-right: 5px;
+ float: left;
+}
+.menu-footer span
+{
+    height: 2px;
+    width: 2px;
+    background: #000;
+    float: left;
+    display: block;
+    margin-top: 10px;
+}
+footer
+{
+    width: 100%;
+    float: left;
+   background-color: #353434;
+}
+.footer
+{
+    width: 100%;
+    float: left; 
+     padding-bottom: 13px;
+    padding-top: 13px;
+}
+.social-media
+{
+   
+    float: left;
+}
+.social-media a
+{
+   float: left; 
+   padding-right: 5px;
+}
+.social-media .fa
+{
+    color: #fff;
+}
+.footer-content
+{
+    float: left;
+}
+.footer-content p
+{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 9px;
+    color: #fff;
+    width: 100%;
+}
+.footer-logo
+{
+    float: right;
+}
+.center-block{
+  margin: 0px auto;
+  display: block;
+}
+
+
+/*mediaquery*/
+@media(max-width:991px)
+{
+    .logo{
+padding-left: 15px;
+width: 100%;
+float: left;
+text-align: center;
+   }
+.logo-icon {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+#planeves
+{
+    text-align: center;
+}
+.logo img {
+
+    float: none;
+}
+#planeves {
+
+    padding-top:0px;
+}
+}
+@media(max-width:991px)
+{
+    .footer-logo img{
+        padding-left: 5px;
+    }
+    .social-media a{
+        line-height: 1.0;
+    }
+}
+@media(max-width:370px)
+{
+    .appstore-content ul{
+        padding-left: 30px;
+    } 
+    .menu-footer ul{
+        padding-left: 37px;
+    }
+}
+@media(max-width:345px)
+{
+    .appstore-content ul{
+        padding-left: 21px;
+    } 
+    .menu-footer ul{
+        padding-left: 26px;
+    }
+}
+@media(max-width:336px)
+{
+    .appstore-content ul{
+        padding-left: 17px;
+    } 
+    .menu-footer ul{
+        padding-left: 21px;
+    }
+}
+@media(max-width:328px)
+{
+    .appstore-content ul{
+        padding-left: 14px;
+    } 
+    .menu-footer ul{
+        padding-left: 16px;
+    }
+}
+@media(max-width:767px)
+{
+    .social-media{
+        padding-bottom: 10px;
+    }
+}
+@media(max-width:383px)
+{
+    .innersection{
+        width: 100%;
+        margin: 0px auto;
+    } 
+}
+@media(max-width:323px)
+{
+    .form-content img{
+        padding-left: 20px;
+    }
+}

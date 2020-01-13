@@ -1,0 +1,661 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+ 
+    Created on : 21 Jul, 2018, 2:53:27 PM
+    Author     : Cotolor Enterprise*/
+
+header
+{
+    z-index: 9;
+    position: relative;
+}
+.header-vendorprofile
+{
+    top: 0px;
+    position: fixed;
+}
+.dashboard-section
+{
+    width: 100%;
+    float: left;
+    padding-bottom: 65px;
+    padding-top: 91px;
+}
+#mySidebar {
+    background-color: #f9f9f9;
+    padding-top: 80px;
+    width: 17%;
+    float: left;
+}
+.w3-button:hover {
+    color: #fff !important;
+    /*    background: #ccc !important;*/
+    /*    background: linear-gradient(to right, #f64f59 0% , #ef239b 100% );*/
+    text-decoration: none;
+    background: url(../images/arrow-left.png), linear-gradient(to right, #f64f59 0% , #ef239b 100% );
+    color: #fff !important;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.w3-button:hover 
+{
+    color: #fff !important;
+    background-color: #ccc !important;
+}
+.w3-green, .w3-hover-green:hover
+{
+    color: #fff !important;
+    background: linear-gradient(to right, #f64f59 0% , #ef239b 100% );
+}
+.w3-white, .w3-hover-white:hover
+{
+    background-color: #f9f9f9 !important;  
+}
+.w3-bar-block .w3-bar-item
+{
+    font-family:RobotoCondensed;
+    font-size: 20px;
+    font-weight: 400;
+    color: #353434;
+}
+.w3-left-align{
+    font-family:RobotoCondensed;
+    font-size: 20px;
+    font-weight: 400;
+    color: #353434;
+}
+.profile-container
+{
+    width: 1088px;
+    margin: 0px auto;
+    padding-top: 140px;
+
+}
+/*.sidebar-section .fas
+{
+ background: linear-gradient(to right, #f64f59 0% , #ef239b 100% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+  
+}*/
+#demoAcc
+{
+    padding-left: 30px;
+}
+#mySidebar i
+{
+    padding-right: 5px;
+}
+#demoAcc .w3-button:hover{
+    background: linear-gradient(to right, #f64f59 0% , #ef239b 100% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+.profile-container h2
+{
+    font-family: 'Fredoka One', cursive;
+    font-size: 34px;  
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #f64f59 0% , #ef239b 100% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 15px;
+}
+.percentage-form
+{
+    border: 1px solid;
+    border-image: linear-gradient(to left,#ef239b 0% ,  #f64f59 100%);
+    border-image-slice: 1;
+
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius:20px;
+
+}
+.percentage-fill
+{
+    border: 1px solid #fdd9e3;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 700px;
+    margin: 0px auto;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.w3-light-grey, .w3-hover-light-grey:hover, 
+.w3-light-gray, .w3-hover-light-gray:hover
+{
+    background-color: #fff !important;  
+}
+.w3-button.w3-block.w3-left-align.active.w3-green 
+{
+    background: linear-gradient(to right, #f64f59 0% , #ef239b 100% );
+}
+.sidebar-section ul
+{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.dashboard-section ul li.active .w3-left-align
+{
+    /*       background: linear-gradient(to right, #f64f59 0% , #ef239b 100% );*/
+    background: url(../images/arrow-left.png), linear-gradient(to right, #f64f59 0% , #ef239b 100% );
+    color: #fff !important;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.w3-card, .w3-card-2{
+    box-shadow: none;
+}
+#demoAcc ul li.active:hover:active:focus {
+
+    background: linear-gradient(to right, #f64f59 0% , #ef239b 100% );
+    background-color: rgba(0, 0, 0, 0);
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.createprofile-form h3
+{
+    font-family:Roboto Condensed;
+    font-size: 24px;
+    font-weight: 600;
+    color: #353434;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 55px;
+    margin: 0px;
+}
+.image-upload > input
+{
+    display: none;
+}
+
+.image-upload img
+{
+    width: 80px;
+    cursor: pointer;
+}
+.image-preview {
+    width: 100%;
+    height:100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+    color: #ecf0f1;
+    cursor: pointer;
+    float: left;
+    margin-top: 51px;
+}
+.image-preview input {
+    line-height: 200px;
+    font-size: 200px;
+    position: absolute;
+    opacity: 0;
+    z-index: 10;
+}
+.image-preview label {
+    position: absolute;
+    z-index: 5;
+    opacity: 0.8;
+    cursor: pointer;
+    /*  background-color: #bdc3c7;*/
+    /*  width: 200px;*/ 
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 45px;
+}
+.image-preview
+{
+    /*border-image: linear-gradient(to left,#ef239b 0% , #f64f59 100%) !important;
+        border-image-slice: 100%;
+    border-image-slice: 100% !important;
+    border-image-slice: 1 !important;
+    border: 1px solid;*/
+    border: double 2px transparent;
+
+    border-image-slice: 100%;
+
+    border-radius: 10px;
+
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f64f59 0% , #ef239b 100%);
+
+    background-origin: border-box;
+
+    background-clip: content-box, border-box;
+}
+.demo-icon.icon-plan-eves-icons_add 
+{
+    background: linear-gradient(to right, #f64f59 0% , #ef239b 100% );
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.company-details
+{
+    float: left;
+    margin-left: 16px;
+    width: 829px;
+    border-radius: 10px;
+}
+.form-field-company
+{
+    width: 100%;
+    height: 165px;
+    border-left: 2px solid #f64f59;
+    border-right: 2px solid #ef239b;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-position: 0px 0, 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 0px;
+    /*background-image: linear-gradient(to right, #f64f59 0%, #ef239b 100%), linear-gradient(to right, #f64f59 0%, #ef239b 100%);*/
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f64f59 0% , #ef239b 100%);
+    padding-top: 20px;
+    padding-left: 20px;
+    border-top: 2px solid #f64f59;
+    border-bottom: 2px solid #ef239b;
+    resize: none;
+}
+
+.company-details h4
+{
+    font-family:Roboto Condensed;
+    font-size: 21px;
+    font-weight: 600;
+    color: #353434;
+    text-transform: uppercase;
+    margin: 0px;
+    padding-bottom: 25px; 
+}
+.image-formfield
+{
+    float: left;
+}
+.image-formfield {
+
+    float: left;
+    width: 185px;
+    margin-left: 16px;
+    margin-right: 13px;
+    height: 165px;
+}
+.album-section
+{
+    width: 100%;
+    float: left;
+    padding-bottom: 70px;
+}
+.formsubmit-profile
+{
+    float: right;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 10px;
+    color: #fff !important;
+    /*    background: #ccc !important;*/
+    background: linear-gradient(to right, #f64f59 0% , #ef239b 100% );
+    border: none;
+    margin-right: 28px;
+    cursor: pointer;
+}
+.footer
+{
+    z-index: 1;
+    position: relative;
+    background: #fff;  
+}
+.footer-vendorprofile
+{
+    z-index: 1;
+    position: relative;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #504f4f;
+    left: 15px;
+    top: 15px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #504f4f;
+    opacity:  1;
+    left: 15px;
+    top: 15px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #504f4f;
+    opacity:  1;
+    left: 15px;
+    top: 15px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    #504f4f;
+    left: 15px;
+    top: 15px;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color:    #504f4f;
+    left: 15px;
+    top: 15px;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+    color:    #504f4f;
+    left: 15px;
+    top: 15px;
+}
+.sidebar-section ul li
+{
+    margin-bottom: 5px;
+}
+
+
+
+
+
+@media(max-width:1366px)
+{
+    .percentage-fill{
+        width: 500px;
+    } 
+    .profile-container{
+        width: 800px;
+    }
+    .image-formfield
+    {
+        width: 135px;
+        height: 120px;
+    }
+    .company-details
+    {
+        width: 600px;
+    }
+    .form-field-company 
+    {
+
+        height: 115px;
+    }
+    .image-formfield{
+        margin-left: 12px;
+        margin-right: 10px;
+    }
+
+}
+@media (max-width:992px)
+{
+    .w3-sidebar.w3-collaps
+    {
+        display: block !important;
+    }
+    .w3-sidebar.w3-collapse 
+    {
+        display: block;
+    }
+    .large .w3-hide-large
+    {
+        display: none;
+    }
+}
+@media(max-width:991px)
+{
+       .w3-teal 
+    {
+        background: linear-gradient(to right, #f64f59 0% , #ef239b 100% ) !important; 
+    }
+    .w3-hover-teal:hover
+    {
+        background: linear-gradient(to right, #f64f59 0% , #ef239b 100% ) !important; 
+    }
+    .profile-container
+    {
+        z-index:-9;
+    }
+    .profile-container {
+        width: 550px;
+    }
+    .w3-sidebar.w3-collapse 
+    {
+        display: none;
+    }
+
+    #mySidebar
+    {
+        width:25%;
+    }
+    .dashboard-section ul li.active .w3-left-align
+    {
+        background: linear-gradient(to right, #f64f59 0% , #ef239b 100% );
+    }
+    .w3-button:hover
+    {
+        background: linear-gradient(to right, #f64f59 0% , #ef239b 100% );
+
+    }
+    .sidebar-section ul
+    {
+        padding-top:100px;
+    }
+    .w3-button.w3-teal.w3-xlarge.w3-hide-large {
+        z-index: 9;
+        top: -50px;
+        position: absolute;
+    }
+    #close-button {
+
+        position: fixed;
+        top: 0px;
+        background: linear-gradient(to right, #f64f59 0% , #ef239b 100% ) !important;
+
+    }
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ebebeb;
+        color:#fff;
+        height: 115px;
+        overflow: hidden;
+        -webkit-transition: height 0.3s;
+        -moz-transition: height 0.3s;
+        transition: height 0.3s;
+        text-align:center;
+    }
+    header.shrink {
+        height: 70px;
+        line-height:80px;
+    }
+    header img
+    {
+        font-size:30px;
+        font-weight:normal;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        height: 100px;
+    }
+
+    header.shrink img
+    {
+        font-size:24px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        height: 50px;
+        display:none;
+    }
+
+    .w3-teal {
+
+        z-index: 180;
+        position: absolute;
+        top: 0px;
+    }
+    .w3-main {
+
+        position: fixed;
+        z-index: 9;
+    }
+    .w3-button.w3-teal.w3-xlarge.w3-hide-large .shrink 
+    {
+
+        top: -52px;
+    }
+    .dashboard-section 
+    {
+        padding-top: 50px;
+    }
+    #logo-menu {
+
+        margin-top: 34px;
+        height: 75px;
+        padding-top: 0px;
+    }
+    .logo {
+
+        padding-left: 15px;
+        width: 300px;
+        margin: 0px auto;
+    }
+    #planeves {
+
+        margin-top: 64px;
+        width: 165px;
+        height: 39px;
+        padding-top: 0px;
+
+    }
+    #planeves.shrink {
+
+        margin-top: 25px;
+        width: 165px;
+        height: 24px;
+    }
+    .company-details
+    {
+        padding-top:67px;
+        width:100%;
+    }
+    .company-details h4
+    {
+        padding-bottom:20px;
+    }
+    .percentage-fill
+    {
+    margin-bottom: 50px;    
+    }
+    .createprofile-form h3
+    {
+        padding-bottom: 0px;
+    }
+    .image-preview{
+      margin-top:40px;
+    }
+    .album-section .image-formfield
+    {
+        width: 100px;
+        height: 100px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .image-formfield {
+    margin-left: 0px;
+    margin-right: 10px;
+    }
+    .company-details
+    {
+    float: left;
+    margin-left: 0px;
+    }
+    .formsubmit-profile
+    {
+      margin-right: 0px;  
+    }
+    .formsubmit-profile
+    {
+        width: 100%;
+    }
+}
+@media(max-width:767px)
+{
+    .logo-icon
+    {
+        width: 20%;
+    }
+    #planeves
+    {
+        float: left;
+    }
+    .logo{
+        float: none;
+    }
+    .profile-container h2
+    {
+        font-size: 15px;
+    }
+    #mySidebar {
+    width: 250px;
+}
+}
+@media(max-width:600px)
+{
+    .profile-container{
+        width: 300px;
+    }
+    .percentage-fill {
+    width: 300px;
+}
+.image-formfield{
+    width: 85px;
+    height: 85px;
+}
+.album-section .image-formfield {
+    width: 55px;
+    height: 55px;
+}
+.logo
+{
+    width: 240px;
+}
+.logo-icon {
+    width: 26%;
+}
+.logo 
+{
+   
+    width: 250px;
+}
+.image-preview label
+{
+ font-size: 20px;   
+}
+.album-section .image-formfield {
+   
+    margin-left: 2px;
+    margin-right: 3px;
+}
+}
+@media(max-width:330px)
+{
+.logo {
+    width: 238px;
+}
+}
+ 

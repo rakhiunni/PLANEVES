@@ -1,0 +1,166 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 Jul, 2018, 4:00:40 AM
+    Author     : Cotolor Enterprise
+*/
+.form-signup
+{
+
+width: 100%;
+float: left;
+}
+.login-form
+{
+ width: 100%;
+float: left;   
+}
+
+.innersection-login
+{
+    width: 384px;
+    margin: 0px auto;
+    padding-top: 140px;  
+/*    padding-bottom: 125px;*/
+
+}
+.form
+{
+    width: 100%;
+    float: left;
+}
+.form-content-login
+{
+width: 100%;
+float: left;
+border: 1px solid #ccc;
+border-radius: 11px;
+height: 40px;
+margin-bottom: 15px;
+}
+.form-content-login img
+{
+    padding-left: 20px;
+    padding-top: 10px;
+    float: left;
+}
+.form-field
+{
+    width: 85%;
+    border:none;
+    padding-top: 12px;
+    float: left;
+    padding-left: 15px;
+    font-size: 11px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.form-submit
+{
+    width: 100%;
+    float: left;
+    background-image: url('../images/Untitled-1.png');
+    height: 44px;
+    background-repeat: no-repeat;
+    border: none;
+    color: #fff;
+    background-position: center;
+    border-radius: 10px;
+    font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.remember-pswd
+{
+    text-align: center;
+    width: 100%;
+    float: left;
+    padding-bottom: 15px;
+}
+.remember-pswd label{
+   
+    color: #353434;
+    font-size: 16px;
+     font-family: 'Roboto', sans-serif;
+     font-weight: 300;
+     padding-left: 5px;
+     
+}
+.form-valid
+{
+    width: 100%;
+    float: left;
+}
+/*.login-up
+{
+    padding-bottom: 70px;
+}*/
+.login-footer
+{
+    padding-bottom: 85px;
+}
+ input[type="checkbox"] {
+    background: linear-gradient(to right, #f64f59 0% , #ef239b 100% );
+    background-clip: border-box;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+   }
+   .innersection-login h3
+   {
+    text-transform: uppercase;
+background: linear-gradient(to right, #f64f59 0% , #ef239b 100% );
+    background-clip: border-box;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;  
+font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
+    font-size: 33px;
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 40px;
+   }
+   .forget
+   {
+       width: 100%;
+       float: left;
+       text-align: center;
+      
+       padding-bottom: 30px;
+   }
+   .forget a
+   {
+    
+background: linear-gradient(to right, #f64f59 0% , #ef239b 100% );
+    background-clip: border-box;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;  
+ font-family: 'Roboto', sans-serif;
+ font-size: 16px;
+    text-align: center;  
+    font-weight: 300;
+    text-decoration: none
+   }
+
+   
+   
+   
+   
+   
+   
+   @media(max-width:1200px)
+{
+    .innersection-login{
+      padding-top: 150px;
+    } 
+} 
+   
+   @media(max-width:383px)
+{
+    .innersection-login{
+        width: 100%;
+        margin: 0px auto;
+    } 
+}

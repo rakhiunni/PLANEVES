@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="fontawesome-free/css/all.css" rel="stylesheet" type="text/css"/>
+        <link href="fontawesome-free/css/fontawesome.css" rel="stylesheet" type="text/css"/>
+        <link href="fontawesome-free/css/svg-with-js.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">  
+        <link href="fontello/css/animation.css" rel="stylesheet" type="text/css"/>
+        <link href="fontello/css/fontello-codes.css" rel="stylesheet" type="text/css"/>
+        <link href="fontello/css/fontello-embedded.css" rel="stylesheet" type="text/css"/>
+        <link href="fontello/css/fontello-ie7-codes.css" rel="stylesheet" type="text/css"/>
+        <link href="fontello/css/fontello-ie7.css" rel="stylesheet" type="text/css"/>
+        <link href="fontello/css/fontello.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link href="style/vendorprofile.css" rel="stylesheet" type="text/css"/>
+        <link href="style/sidebar-dashboardvendor.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body>
+        <!---header starts here---->
+        <header class="header-vendorprofile">
+            <div class="container-fluid header">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="logo">
+                            <div class="logo-icon">
+                                <a href="index.html"><img src="images/logo.png" alt="" id="logo-menu" class="img-responsive"/></a>
+                            </div>
+                            <div class="logo-planeves">
+                                <a href="index.html"> <img src="images/planeves.png" alt="" id="planeves" class="img-responsive"/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!---header ends here---->
+        <!---body starts here---->
+        <div class="container-fluid dashboard-section">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="row">
+                        <div class="sidebar-section">
+
+                            <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left"  id="mySidebar">
+<!--                                <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>-->
+                                <ul>
+                                    
+                               
+                                    <li><a href="#" class="w3-bar-item w3-button"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                                </li> 
+                                <li class="active"> <button class="w3-button w3-block w3-left-align" onclick="myAccFunc()">
+                                        <i class="demo-icon icon-plan-eves-icons_profiles"></i>
+                                       
+                                    Profile
+<!--                                    <i class="fa fa-caret-down"></i>-->
+                                </button>
+                               
+                                <div id="demoAcc" class="w3-hide w3-white w3-card">
+                                    <ul>
+                                        <li class="active"><a href="#" class="w3-bar-item w3-button">overview</a></li>
+                                     <li><a href="#" class="w3-bar-item w3-button">contact</a></li>
+                                     <li><a href="#" class="w3-bar-item w3-button">photos</a></li>
+                                     <li><a href="#" class="w3-bar-item w3-button">Social Media</a></li>
+</ul>
+                                </div>
+ </li> 
+                                <li><a href="#" class="w3-bar-item w3-button"><i class="demo-icon icon-plan-eves-icons_booking"></i>Bookings</a>
+                                 </li> 
+                                <li><a href="#" class="w3-bar-item w3-button"><i class="demo-icon icon-plan-eves-icons_settings"></i>Settings</a>
+                              </li> 
+                                </ul>
+                            </div>
+
+                            <div class="w3-main" style="margin-left:200px">
+                                <div class="w3-teal">
+                                    <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()" id="open-button">&#9776;</button>
+                                    <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()" id="close-button"> &times;</button>
+                                    <div class="w3-container">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Page content -->
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="profile-container" id="content-profilevendor">
+                            <h2>create profile</h2>
+                            <div class="percentage-fill">
+                                <div class="w3-light-grey percentage-form">
+                                    <div id="myBar" class="w3-container w3-green w3-center " style="width:20%">20%</div> 
+                                </div>
+
+                            </div>  
+                            <div class="createprofile-form">
+                                <h3>Overview</h3>
+
+
+                                <form>
+                                    <div class=" image-formfield">
+                                        <div id="image-preview" class="image-preview">
+                                            <label for="image-upload" id="image-label"> 
+                                                <i class="demo-icon icon-plan-eves-icons_add"></i> <span></span></label>
+                                            <input type="file" name="image" id="image-upload" required/>
+                                        </div>
+                                    </div>
+                                    <div class=" company-details">
+                                        <h4>Who we are</h4> 
+                                        <textarea class="form-field-company" placeholder="Describe your Company or entity" ></textarea>
+                                    </div>
+                                    <div class="album-section">
+                                    <div class="image-formfield">
+                                        <div id="image-preview1" class="image-preview">
+                                            <label for="image-upload1" id="image-label1"> 
+                                                <i class="demo-icon icon-plan-eves-icons_add"></i> <span></span></label>
+                                            <input type="file" name="image" id="image-upload1" required/>
+                                        </div>
+                                    </div>
+                                    <div class=" image-formfield">
+                                        <div id="image-preview2" class="image-preview">
+                                            <label for="image-upload2" id="image-label"> 
+                                                <i class="demo-icon icon-plan-eves-icons_add"></i> <span></span></label>
+                                            <input type="file" name="image" id="image-upload2" required/>
+                                        </div>
+                                    </div>
+                                    <div class=" image-formfield">
+                                        <div id="image-preview3" class="image-preview">
+                                            <label for="image-upload3" id="image-label"> 
+                                                <i class="demo-icon icon-plan-eves-icons_add"></i> <span></span></label>
+                                            <input type="file" name="image" id="image-upload3" required/>
+                                        </div>
+                                    </div>
+                                    <div class="image-formfield">
+                                        <div id="image-preview4" class="image-preview">
+                                            <label for="image-upload4" id="image-label"> 
+                                                <i class="demo-icon icon-plan-eves-icons_add"></i> <span></span></label>
+                                            <input type="file" name="image" id="image-upload4" required/>
+                                        </div>
+                                    </div>
+                                    <div class=" image-formfield">
+                                        <div id="image-preview5" class="image-preview">
+                                            <label for="image-upload5" id="image-label"> 
+                                                <i class="demo-icon icon-plan-eves-icons_add"></i> <span></span></label>
+                                            <input type="file" name="image" id="image-upload5" required/>
+                                        </div>
+                                    </div>
+                                        </div>
+                                        <input type="submit" value="save" class="formsubmit-profile">
+                                        
+                                </form>
+
+                            
+ </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!----body ends here---->
+        <!---footer starts here---->
+        <footer>
+            <div class="border-footer footer-vendorprofile"></div>
+            <div class="container-fluid footer">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="social-media col-lg-1 col-md-2 col-sm-12">
+                            <div class="row ">    
+                                <div class="socialmedia-icons center-block">
+                                    <a href=""><img src="images/facebook.png"  class="img-responsive" alt=""/></a>
+                                    <a href=""><img src="images/gpls.png"  class="img-responsive" alt=""/></a>
+                                    <a href=""> <img src="images/inst.png"  class="img-responsive" alt=""/></a>  
+                                    <a href=""> <img src="images/pin.png"  class="img-responsive" alt=""/></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--                        <div class="footer-content col-lg-10 col-md-8 col-sm-12">
+                                                    <div class="row">   
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>  
+                                                    </div>
+                                                </div>-->
+                        <div class="footer-logo col-lg-1 col-md-2 col-sm-12 center-block">
+                            <div class="row ">   
+                                <div class="center-block">
+                                    <a href="" id="footer-logo"><img src="images/footer-logo.png" class="img-responsive ce"  alt=""/></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!---footer ends here---->
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+        <script src="bootstrap/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
+        <script src="http://opoloo.github.io/jquery_upload_preview/assets/js/jquery.uploadPreview.min.js"></script>
+        <script>
+            // toggle the sidebar 
+                                        function w3_open() {
+                                            document.getElementById("mySidebar").style.display = "block";
+                                            document.getElementById("open-button").style.display = "none";
+                                              document.getElementById("close-button").style.display = "block";
+
+
+                                        }
+                                        function w3_close() {
+                                            document.getElementById("mySidebar").style.display = "none";
+                                            document.getElementById("close-button").style.display = "none";
+                                             document.getElementById("open-button").style.display = "block";
+
+                                        }
+// toggle the sidebar and content
+   
+
+                                        function myAccFunc() {
+                                            var x = document.getElementById("demoAcc");
+                                            if (x.className.indexOf("w3-show") == -1) {
+                                                x.className += " w3-show";
+                                                x.previousElementSibling.className += " w3-green";
+                                            } else {
+                                                x.className = x.className.replace(" w3-show", "");
+                                                x.previousElementSibling.className =
+                                                        x.previousElementSibling.className.replace(" w3-green", "");
+                                            }
+                                        }
+                                         $(document).ready(function () {
+
+                // do not show/hide menu on desktops when resizing
+                var resizeTimer;
+                $(window).on('resize', function (e) {
+                    clearTimeout(resizeTimer);
+                    resizeTimer = setTimeout(function () {
+                        if ($(window).width() > 768) {
+                            if ($('#wrapper').hasClass('sidebar-hidden')) {
+                                $('.sidebar-wrapper').hide();
+                            } else {
+                                $('.sidebar-wrapper').show();
+                            }
+                        }
+                    }, 250);
+                });
+
+                // toggle sidebar
+                $('#sidebar-toggle').click(function (e) {
+                    e.preventDefault();
+                    // hide the sidebar menu
+                    $('#wrapper').toggleClass('sidebar-hidden');
+                });
+
+            });
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $.uploadPreview({
+                    input_field: "#image-upload",
+                    preview_box: "#image-preview",
+                    //label_field: "#image-label"
+                });
+            });
+             $(document).ready(function () {
+                $.uploadPreview({
+                    input_field: "#image-upload1",
+                    preview_box: "#image-preview1",
+                    //label_field: "#image-label"
+                });
+            });
+             $(document).ready(function () {
+                $.uploadPreview({
+                    input_field: "#image-upload2",
+                    preview_box: "#image-preview2",
+                    //label_field: "#image-label"
+                });
+            });
+             $(document).ready(function () {
+                $.uploadPreview({
+                    input_field: "#image-upload3",
+                    preview_box: "#image-preview3",
+                    //label_field: "#image-label"
+                });
+            });
+             $(document).ready(function () {
+                $.uploadPreview({
+                    input_field: "#image-upload4",
+                    preview_box: "#image-preview4",
+                    //label_field: "#image-label"
+                });
+            });
+             $(document).ready(function () {
+                $.uploadPreview({
+                    input_field: "#image-upload5",
+                    preview_box: "#image-preview5",
+                    //label_field: "#image-label"
+                });
+            });
+            $(function(){
+ var shrinkHeader = 300;
+  $(window).scroll(function() {
+    var scroll = getCurrentScroll();
+      if ( scroll >= shrinkHeader ) {
+           $('header').addClass('shrink');
+        }
+        else {
+            $('header').removeClass('shrink');
+        }
+  });
+function getCurrentScroll() {
+    return window.pageYOffset || document.documentElement.scrollTop;
+    }
+});
+
+        </script>
+    </body>
+</html>
